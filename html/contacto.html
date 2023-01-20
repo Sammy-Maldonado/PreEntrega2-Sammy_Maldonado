@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+  <header id="encabezado">
+    <h1>Contactanos</h1>
+
+    <div class="header__flex__content">
+      <img class="header__img" src="../img/churu_logo.png" alt="un gato churu">
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="sobre nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <form class="nav__form">
+        <label for="buscar"><img class="nav__lupa" src="../img/lupa.png" alt="lupa"></label>
+        <input type="text" value="" placeholder="Buscar tu producto AQUÍ..." id="buscar" class="buscar" name="buscar">
+        <input type="submit" value="Buscar" class="buscar_btn" name="buscar_btn">
+      </form>
+
+      <div class="header__links">
+        <a href="#"><img src="../img/persona_icon.png" alt="icono_persona" class="icono_persona"></a>
+        <ul>
+          <li class="micuenta_a"><a href="miCuenta.html">Mi cuenta | </a></li>
+        </ul>
+        <a href="carrito.html"><img src="../img/carrito.png" alt="icono_carrito" class="icono_carrito"></a>
+        <a href="https://wa.me/" target="_blank" rel="noopener noreferrer"><img src="../img/wsp.png" alt="icono_wsp"
+            class="icono_wsp"></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="header__links--2">
+    <ul class="header__links__ul">
+      <li><a href="#0">Todas las categorias</a></li>
+      <li><a href="#0">Marcas</a></li>
+      <li><a href="#0">Alimentos para Perro</a></li>
+      <li><a href="#0">Alimentos para Gato</a></li>
+      <li><a href="#0">Juguetes</a></li>
+      <li><a href="#0">Farmacia</a></li>
+      <li><a href="#0">Veterinaria</a></li>
+      <li><a href="#0">Peluqueria</a></li>
+    </ul>
+    </nav>
+  </div>
+
+  <main class="textos--modify">
+
+    <h2 class="main__h2">¿Quieres contarnos algo?</h2>
+    <p>Por favor, llena el siguiente formulario y te responderemos a la brevedad.</p>
+
+    <div class="contacto__grid">
+      <div>
+        <form class="contaco__form" method="post" action="">
+          <fieldset class="contacto__fieldset">
+            <label class="contacto__label" for="first-name">Nombre <input class="contacto__input" id="first-name"
+                name="first-name" type="text" required /></label>
+            <label class="contacto__label" for="last-name">Apellido <input class="contacto__input" id="last-name"
+                name="last-name" type="text" required /></label>
+
+            <div class="contacto__correo__grid">
+              <label class="contacto__label" for="email">Correo <input class="contacto__input" id="email" name="email"
+                  type="email" required /></label>
+              <label class="contacto__label" for="email">Confirma tu Correo <input class="contacto__input" id="email"
+                  name="email" type="email" required /></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="contacto__fieldset">
+            <label class="contacto__label" for="personal-account"><input id="personal-account" type="radio"
+                name="account-type" class="inline" /> Cuenta Personal</label>
+            <label class="contacto__label" for="business-account"><input id="business-account" type="radio"
+                name="account-type" class="inline" /> Cuenta de Negocios</label>
+            <label class="contacto__label" for="terms-and-conditions">
+              <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" />
+              acepto los <a class="form__terms-a" href="#0">terminos y condiciones</a>
+            </label>
+          </fieldset>
+
+          <fieldset class="contacto__fieldset">
+            <label class="contacto__label" for="profile-picture">Subir foto (opcional) <input class="contacto__input"
+                id="profile-picture" type="file" name="file" /></label>
+            <label class="contacto__label" for="age">Tu edad (años): <input class="contacto__input" id="age"
+                type="number" name="age" min="13" max="120" /></label>
+            <label class="contacto__label" for="referrer">¿Como te enteraste de nosotros?
+              <select id="referrer" name="referrer">
+                <option value="">(selecciona una)</option>
+                <option value="1">Por redes sociales</option>
+                <option value="2">Alguien me contó de ustedes</option>
+                <option value="3">Por una puiblicidad</option>
+                <option value="4">Otro</option>
+              </select>
+            </label>
+            <label class="contacto__label" for="bio">Cuentanos en que podemos ayudarte
+              <textarea id="bio" name="bio" rows="10" cols="30" placeholder="Escribe aquí..."
+                maxlength="1000"></textarea>
+            </label>
+          </fieldset>
+
+          <input class="contacto__input" type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <div class="contacto__grid--modify">
+        <h2>Sucursal</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d106579.96364704832!2d-70.6936832!3d-33.406976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1673013621809!5m2!1ses!2scl"
+          width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Direccion: Lorem ipsum dolor sit, amet consectet</p>
+        <p>Horario de atención: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, corporis?</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer__contenedor">
+      <div>
+        <a href="#0">
+          <p class="footer__titulos">| Ayuda</p>
+        </a>
+        <ul class="footer__listas">
+          <li><a class="footer__a" href="#0">Centro de ayuda</a></li>
+          <li><a class="footer__a" href="#0">Seguimiento de tu compra</a></li>
+          <li><a class="footer__a" href="#0">Formulario de contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <a href="#0">
+          <p class="footer__titulos">| Sobre nosotros</p>
+        </a>
+        <ul class="footer__listas">
+          <li><a class="footer__a" href="#0">Quienes somos</a></li>
+          <li><a class="footer__a" href="#0">Ventas al por Mayor</a></li>
+          <li><a class="footer__a" href="#0">Términos y Condiciones</a></li>
+          <li><a class="footer__a" href="#0">Políticas de privacidad</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <a href="#0">
+          <p class="footer__titulos">| Agendar hora</p>
+        </a>
+        <ul class="footer__listas">
+          <li>
+            <input class="footer__btn" type="button" value="Veterinario">
+          </li>
+          <li>
+            <input class="footer__btn" type="button" value="Peluquería">
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <a href="#0">
+          <p class="footer__titulos">| Comunidad</p>
+        </a>
+        <ul class="footer__listas">
+          <li><a class="footer__a--modify" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+          <li><a class="footer__a--modify" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          <li><a class="footer__a--modify" href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+          <li><a class="footer__a--modify" href="https://wa.me/" target="_blank">Whatsapp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="copyright">Pagina creada por Sammy Maldonado - Todos los derechos reservados</p>
+
+  </footer>
+
+</body>
+
+</html>
