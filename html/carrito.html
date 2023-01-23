@@ -12,30 +12,30 @@
 
 <body>
   <header id="encabezado">
-    <h1>Carrito</h1>
+    <h1>Carrito de compras</h1>
 
     <div class="header__flex__content">
       <img class="header__img" src="../img/churu_logo.png" alt="un gato churu">
 
       <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="sobre nosotros.html">Sobre Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+        <ul class="nav__ul">
+          <li class="nav__links"><a href="../index.html">Inicio</a></li>
+          <li class="nav__links"><a href="blog.html">Blog</a></li>
+          <li class="nav__links"><a href="sobre nosotros.html">Sobre Nosotros</a></li>
+          <li class="nav__links"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
 
-          <form class="nav__form">
+      <form class="nav__form">
         <label for="buscar"><img class="nav__lupa" src="../img/lupa.png" alt="lupa"></label>
         <input type="text" value="" placeholder="Buscar tu producto AQUÍ..." id="buscar" class="buscar" name="buscar">
         <input type="submit" value="Buscar" class="buscar_btn" name="buscar_btn">
       </form>
 
       <div class="header__links">
-        <a href="#"><img src="../img/persona_icon.png" alt="icono_persona" class="icono_persona"></a>
-        <ul>
-          <li class="micuenta_a"><a href="miCuenta.html">Mi cuenta | </a></li>
+        <a href="miCuenta.html"><img src="../img/persona_icon.png" alt="icono_persona" class="icono_persona"></a>
+        <ul class="header__links--ul">
+          <li class="micuenta_li"><a class="micuenta_a" href="miCuenta.html">Mi cuenta | </a></li>
         </ul>
         <a href="carrito.html"><img src="../img/carrito.png" alt="icono_carrito" class="icono_carrito"></a>
         <a href="https://wa.me/" target="_blank" rel="noopener noreferrer"><img src="../img/wsp.png" alt="icono_wsp"
@@ -55,7 +55,6 @@
         <li><a href="#0">Veterinaria</a></li>
         <li><a href="#0">Peluqueria</a></li>
       </ul>
-    </nav>
   </div>
 
   <main class="textos__carrito">

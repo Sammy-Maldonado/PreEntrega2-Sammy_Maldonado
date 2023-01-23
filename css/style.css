@@ -9,7 +9,7 @@ body {
   font-family: 'Cabin', sans-serif;
   background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(../img/churu_salmon.jpg);
   background-size: 480px;
-  margin: 0 100px;
+  margin: 0 5.21vw;
   font-size: 1.6rem;
 }
 
@@ -17,16 +17,17 @@ body {
 /* HEADER */
 
 header {
-  padding-bottom: 8px;
-  margin-bottom: 8px;
-  border-bottom: 2px solid rgb(181, 181, 181);
+  padding-bottom: 0.854vh;
+  margin-bottom: 0.854vh;
+  border-bottom: 0.104vw solid rgb(181, 181, 181);
+  padding: 0 ;
 }
 
 h1 {
   color: red;
-  margin-top: 20px;
+  margin-top: 2.134vh;
   margin-bottom: 0;
-  padding-top: 20px;
+  padding: 2.134vh 50px 0;
   text-align: center;
   font-size: 5rem;
   font-style: italic;
@@ -35,7 +36,13 @@ h1 {
 nav {
   display: flex;
   align-items: center;
+  justify-items: center;
   margin-left: 3vw;
+  width: 28vw;
+}
+
+.nav__ul {
+  width: inherit;
 }
 
 .header__links {
@@ -48,17 +55,18 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 5vw;
 }
 
 .nav__lupa {
-  margin-left: 20px;
+  margin-left: 1.042vw;
   width: 17px;
-  padding-right: 4px;
-  padding-top: 3px;
+  padding-right: 0.208vw;
+  padding-top: 0.32vh;
 }
 
 .buscar {
-  margin-left: 5px;
+  margin-left: 0.260vw;
   width: 18vw;
   height: 25px;
   border-radius: 8px;
@@ -67,21 +75,24 @@ nav {
 }
 
 .buscar_btn {
-  margin-left: 3px;
+  margin-left: 0.156vw;
 }
 
 .icono_persona {
-  margin-left: 10vw;
   width: 12px;
 }
 
+.micuenta_li {
+  margin-left: 0.417vw;
+}
+
 .micuenta_a {
-  margin-left: 8px;
+  width: 100px;
 }
 
 .icono_carrito {
   width: 25px;
-  margin-right: 15px;
+  margin-right: 0.781vw;
 }
 
 .icono_wsp {
@@ -96,29 +107,28 @@ header ul {
 
 header ul li {
   display: flex;
-  margin: 20px;
+  margin: 2.134vh 1.042vw;
 }
 
 .header__flex__content {
+  padding: 0 50px;
   display: flex;
-  margin: 0 auto;
-  padding: 0 24px;
+  margin: 0;
   justify-content: left;
 }
 
 .header__img {
-  width: 18vh;
-  padding-left: 30px;
+  height: 100px;
+  padding-left: 1.599vw;
 }
-
+ 
 a {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  
 }
-
-
 
 .header__links--2 {
   display: flex;
@@ -135,7 +145,7 @@ ul.header__links__ul {
 
 ul.header__links__ul li {
   display: flex;
-  margin: 20px;
+  margin: 2.13vh 1.042vw;
   font-size: small;
 }
 
@@ -167,12 +177,12 @@ ul.header__links__ul li {
 
 .textos {
   text-align: center;
-  padding: 50px;
+  padding: 50px 2.6vw;
 }
 
 img.carrusel {
   margin-top: 30px;
-  width: 1000px;
+  width: 52vw;
 }
 
 h2 {
@@ -191,8 +201,8 @@ p {
 .gridPadre {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 30px;
-  row-gap: 20px;
+  column-gap: 1.56vw;
+  row-gap: 2.14vh;
   height: 250px;
   width: 1fr;
   margin-top: 50px;
@@ -475,7 +485,6 @@ ul.footer__listas li {
   align-self: center;
   justify-self: center;
   margin-top: 10px;
-  width: 30%;
   border-radius: 10px;
   background-color: #008CBA;
   border: none;
