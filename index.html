@@ -6,13 +6,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Los mejores Churus</title>
+  <!-- CSS BS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
-<body class="body__responsive">
-  <header id="encabezado">
-    <h1>Churulandia</h1>
+<body class="container-fluid p-5 col-sm-12">
+  <header class="pb-1" id="encabezado">
+    <h1 class="pb-4">Churulandia</h1>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="header__img" src="img/churu_logo.png" alt="un gato churu"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="html/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="html/sobre nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Todas las categorias</a></li>
+                <li><a class="dropdown-item" href="#">Marcas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Alimentos para Perro</a></li>
+                <li><a class="dropdown-item" href="#">Alimentos para Gato</a></li>
+                <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                <li><a class="dropdown-item" href="#">Farmacia</a></li>
+                <li><a class="dropdown-item" href="#">Veterinaria</a></li>
+                <li><a class="dropdown-item" href="#">Peluqueria</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
     <div class="header__flex__content">
       <img class="header__img" src="img/churu_logo.png" alt="un gato churu">
@@ -45,7 +93,7 @@
   </header>
 
   <div class="header__links--2">
-    <ul class="header__links__ul">
+    <ul class="header__links__ul mt-5">
       <li><a href="#0">Todas las categorias</a></li>
       <li><a href="#0">Marcas</a></li>
       <li><a href="#0">Alimentos para Perro</a></li>
@@ -57,13 +105,44 @@
     </ul>
   </div>
 
-  <main>
-    <img src="img/carrusel.png" alt="carrusel-ejemplo" class="carrusel">
+  <main class="py-4">
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active mb-5">
+          <img src="img/churu-salmon-carrusel.png" class="d-block w-100" alt="churu salmon">
+        </div>
+        <div class="carousel-item">
+          <img src="img/churu-pollo.png" class="d-block w-100" alt="churu pollo">
+        </div>
+        <div class="carousel-item">
+          <img src="img/churu-atun.jpg" class="d-block w-100" alt="churu atun">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <h2>⭐ PRODUCTOS EN OFERTA ⭐😱</h2>
     <p class="h2__p"><b>APROVECHA ESTA GRAN OPORTUNIDAD !</b></p>
 
-    <div class="gridPadre">
+    <div class="gridPadre img-fluid mt-5">
 
       <div class="item1">
         <p>Producto 1</p>
@@ -104,18 +183,18 @@
       </div>
     </div>
 
-    <h2>⭐ PRODUCTOS DESTACADOS 🏆 🥇</h2>
+    <h2 class="mt-5">⭐ PRODUCTOS DESTACADOS 🏆 🥇</h2>
     <p class="h2__p"><b>SOLO POR HOY !</b></p>
 
-    <div class="gridPadre3">
+    <div class="gridPadre3 my-5">
       <div class="gridPadre__gatos">
-        <img src="img/gato_jugando.jpg" alt="gato jugando">
+        <img class="mascota-jugando img-fluid rounded-4" src="img/gato_jugando.jpg" alt="gato jugando">
       </div>
 
-      <div class="gridPadre__perros">
-        <img src="img/perro_feliz.jpg" alt="perro feliz">
+      <div class="gridPadre__perros mt-5">
+        <img class="mascota-jugando img-fluid rounded-4" src="img/perro_feliz.jpg" alt="perro feliz">
       </div>
-    
+
       <div class="gridPadre3_btn1">
         <a class="buscar_btn--modify" href="#0">GATOS</a>
       </div>
@@ -125,34 +204,45 @@
       </div>
     </div>
 
-    <section>
-      <div class="contenedor__banner">
-        <div class="contenedor__banner--contenido">
-          <h2 class="contenedor__banner--h2">Conoce nuestros Productos</h2>
-          <a class="contenedor__banner--a" href="#0">Ver Productos</a>
+    <section class="my-5">
+      <div class="contenedor__banner py-4 rounded-4">
+        <h2 class="contenedor__banner--h2 text-center">Conoce nuestros Productos</h2>
+        <a class="contenedor__banner--a mt-4 p-2 rounded-3 text-center" href="#0">Ver Productos</a>
+      </div>
+    </section>
+
+    <section class="contenedor__imagenes mt-4 text-center">
+
+      <div class="gridPadre4 text-center">
+        
+        <div class="gridPadre4__cda my-4">
+          <a class="centro-de-ayuda1" href="#0"><img class="centro-de-ayuda1 img-fluid text-center" src="img/Ayuda.png" alt="centro de ayuda"></a>
+          <a class="contenedor__btn text-center" href="#0">Centro de ayuda</a>
+        </div>
+  
+        <div class="gridPadre4__cda my-4">
+          <a class="centro-de-ayuda2" href="#0"><img class="centro-de-ayuda2 img-fluid text-center" src="img/garantia.png"
+            alt="garantias"></a>
+          <a class="contenedor__btn text-center" href="#0">Garantias</a>
+        </div>
+
+        <div class="gridPadre4__cda my-4">
+          <a class="centro-de-ayuda3" href="#0"><img class="centro-de-ayuda3 img-fluid text-center" src="img/pagos2.png"alt="pagos"></a>
+          <a class="contenedor__btn text-center" href="#0">Pagos</a>
+        </div>
+
+        <div class="gridPadre4__cda my-4">
+          <a class="centro-de-ayuda4" href="#0"><img class="centro-de-ayuda4 img-fluid text-center" src="img/seguimiento.png" alt="seguimiento de tu compra"></a>
+          <a class="contenedor__btn text-center" href="#0">Seguimiento</a>
         </div>
       </div>
+
+
+      <div >
+
     </section>
 
-    <section>
-      <div class="contenedor__imagenes">
-        <a class="centro-de-ayuda1" href="#0"><img class="centro-de-ayuda1" src="img/Ayuda.png"
-            alt="centro de ayuda"></a>
-        <a class="centro-de-ayuda2" href="#0"><img class="centro-de-ayuda2" src="img/garantia.png" alt="garantias"></a>
-        <a class="centro-de-ayuda3" href="#0"><img class="centro-de-ayuda3" src="img/pagos2.png" alt="pagos"></a>
-        <a class="centro-de-ayuda4" href="#0"><img class="centro-de-ayuda4" src="img/seguimiento.png"
-            alt="seguimiento de tu compra"></a>
-      </div>
-    </section>
 
-    <section>
-      <div class="contenedor__parrafos">
-        <a class="contenedor__btn" href="#0">Centro de ayuda</a>
-        <a class="contenedor__btn" href="#0">Garantias</a>
-        <a class="contenedor__btn" href="#0">Pagos</a>
-        <a class="contenedor__btn" href="#0">Seguimiento</a>
-      </div>
-    </section>
   </main>
 
   <footer>
@@ -208,8 +298,10 @@
     </div>
 
     <p class="copyright">Pagina creada por Sammy Maldonado - Todos los derechos reservados</p>
-
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
