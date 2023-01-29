@@ -1159,29 +1159,48 @@ textarea {
     grid-template-rows: auto;
   }
 
-  .contenedor__imagenes {
-    
-  }
-
   /* FOOTER */
 
+  footer {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+
   .footer__contenedor {
-    display: flex;
+    display: inherit;
     align-items: center;
     justify-items: center;
-    justify-content: space-around;
-    padding: 0;
   }
 
-  .footer__titulo1,
-  .footer__titulo2,
-  .footer__titulo3,
-  .footer__titulo4 {
-    margin: 0;
+  .footer__contenedor--flex1 {
+    grid-column: 1/2;
+    align-self: flex-start;
   }
 
-  .footer__listas {
-    display: contents;
+  .footer__contenedor--flex2 {
+    grid-column: 2/3;
+    align-self: flex-start;
+  }
+
+  .footer__contenedor--flex3 {
+    grid-column: 3/4;
+    align-self: flex-start;
+  }
+
+  .footer__contenedor--flex4 {
+    grid-column: 4/5;
+    align-self: flex-start;
+  }
+
+  .footer__contenedor--a {
+    display: inherit;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .copyright {
+    grid-row: 2/3;
   }
 
 }
