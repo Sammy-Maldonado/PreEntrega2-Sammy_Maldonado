@@ -33,53 +33,12 @@ h1 {
   align-items: center;
   justify-items: center;
   margin: 0;
-  grid-column: 2/3;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  margin-left: 3vw;
-  width: 28vw;
-}
-
-.nav__ul {
-  width: inherit;
 }
 
 .header__links {
   display: flex;
   align-items: center;
   padding: 0;
-  grid-column: 4/5;
-}
-
-.nav__form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 5vw;
-}
-
-.nav__lupa {
-  margin-left: 1.042vw;
-  width: 17px;
-  padding-right: 0.208vw;
-  padding-top: 0.32vh;
-}
-
-.buscar {
-  margin-left: 0.260vw;
-  width: 18vw;
-  height: 25px;
-  border-radius: 8px;
-  border: 0.5px black solid;
-  box-shadow: 1px 1px 2px #000;
-}
-
-.buscar_btn {
-  margin-left: 0.156vw;
 }
 
 .icono_persona {
@@ -103,25 +62,6 @@ nav {
   width: 20px;
 }
 
-header ul {
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-
-header ul li {
-  display: flex;
-  margin: 2.134vh 1.042vw;
-}
-
-.header__flex__content {
-  padding: 0;
-  display: flex;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
-}
-
 .header__img {
   height: 100px;
 }
@@ -131,50 +71,6 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-
-}
-
-.header__links--2 {
-  display: flex;
-  grid-area: nav2;
-  margin: 0;
-  height: 25px;
-  justify-content: center;
-}
-
-ul.header__links__ul {
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-
-ul.header__links__ul li {
-  display: flex;
-  margin: 2.13vh 1.042vw;
-  font-size: small;
-}
-
-.buscar_btn {
-  margin-left: 20px;
-  border-radius: 10px;
-  background-color: #008CBA;
-  border: none;
-  color: white;
-  padding: 10px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.6rem;
-  box-shadow: 2px 2px 5px #000;
-}
-
-.buscar_btn:hover {
-  cursor: pointer;
-}
-
-.buscar_btn:active {
-  background-color: #22afde;
-  color: black
 }
 
 
@@ -270,29 +166,6 @@ div.gridPadre2 div h3 {
   align-items: center;
   justify-content: center;
   grid-column: 3/4;
-}
-
-.buscar_btn--modify {
-  width: 50%;
-  border-radius: 10px;
-  background-color: #008CBA;
-  border: none;
-  color: white;
-  padding: 10px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.6rem;
-  box-shadow: 2px 2px 5px #000;
-}
-
-.buscar_btn--modify:hover {
-  cursor: pointer;
-}
-
-.buscar_btn--modify:active {
-  background-color: #22afde;
-  color: black
 }
 
 .contenedor__banner {
@@ -391,16 +264,10 @@ div.gridPadre2 div h3 {
 /* FOOTER */
 
 footer {
-  padding-top: 8px;
-  margin-top: 8px;
   border-top: 2px solid rgb(181, 181, 181);
 }
 
 .footer__contenedor {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  justify-items: center;
 
 }
 
@@ -453,8 +320,6 @@ ul.footer__listas li {
 .copyright {
   font-size: 1.4rem;
   text-align: right;
-  padding-top: 8px;
-  margin-top: 8px;
   border-top: 2px solid rgb(181, 181, 181);
 }
 
@@ -764,7 +629,7 @@ textarea {
   header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: auto;
   }
 
   h1 {
@@ -774,51 +639,12 @@ textarea {
     justify-self: center;
   }
 
-  .header__flex__content {
-    display: inherit;
-    height: 180px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column: 1/5;
-    grid-row: 2/4;
-  }
-
-  .header__img {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    align-self: center;
-    justify-self: center;
-  }
-
-
-  .header__nav {
-    margin: 0 auto;
-    width: 100%;
-    grid-column: 1/5;
-    grid-row: 2/3;
-    align-self: center;
-    justify-self: center;
-  }
-
-  .nav__ul {
-    justify-content: space-evenly;
-    margin: 0;
-  }
-
-  .nav__form {
-    grid-column: 2/4;
-    align-self: center;
-    justify-self: center;
-  }
-
-  .buscar {
-    width: 100%;
-    align-self: center;
-    justify-self: center;
+  .navbar {
+    grid-column: 1/3;
   }
 
   .header__links {
-    grid-column: 4/5;
+    grid-column: 3/5;
     align-self: center;
     justify-self: center;
     width: 100%;
@@ -832,11 +658,6 @@ textarea {
   .micuenta_a {
     display: none;
   }
-
-  .header__links--2 {
-    display: none;
-  }
-
 
   /* MAIN */
 
@@ -862,8 +683,8 @@ textarea {
 
   .item1,
   .item2 {
-  max-width: 425px;
-}
+    max-width: 425px;
+  }
 
   .item3 {
     display: none;
@@ -964,30 +785,28 @@ textarea {
 
   /* FOOTER */
 
-  footer {
-    display: grid;
-  }
-
-  .footer__contenedor--flex {
-    display: inherit;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .footer__contenedor--a {
-    display: inherit;
-    align-items: center;
-    justify-items: center;
-  }
-
   .footer__contenedor {
-    display: inherit;
-    margin: 0 auto;
-    padding: 0 2.6vw;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    padding: 0;
   }
 
   .footer__listas {
     display: none;
+  }
+
+  .footer__titulo1,
+  .footer__titulo2,
+  .footer__titulo3,
+  .footer__titulo4 {
+  font-size: 1.2rem;
+  margin: 0;
+  }
+
+  .copyright {
+    font-size: 1rem
   }
 }
 
@@ -1032,49 +851,6 @@ textarea {
     justify-self: center;
   }
 
-  .header__flex__content {
-    display: inherit;
-    height: 180px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column: 1/5;
-    grid-row: 2/4;
-  }
-
-  .header__img {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    align-self: center;
-    justify-self: center;
-  }
-
-
-  .header__nav {
-    margin: 0 auto;
-    width: 100%;
-    grid-column: 1/5;
-    grid-row: 2/3;
-    align-self: center;
-    justify-self: center;
-  }
-
-  .nav__ul {
-    justify-content: space-evenly;
-    margin: 0;
-  }
-
-  .nav__form {
-    grid-column: 2/4;
-    align-self: center;
-    justify-self: center;
-  }
-
-  .buscar {
-    width: 100%;
-    align-self: center;
-    justify-self: center;
-  }
-
   .header__links {
     grid-column: 4/5;
     align-self: center;
@@ -1088,10 +864,6 @@ textarea {
   }
 
   .micuenta_a {
-    display: none;
-  }
-
-  .header__links--2 {
     display: none;
   }
 
