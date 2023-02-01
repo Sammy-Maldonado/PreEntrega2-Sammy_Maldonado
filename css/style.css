@@ -433,6 +433,7 @@ section.main__section div {
   text-decoration: underline;
   font-weight: bold;
   font-size: 6rem;
+  letter-spacing: 5px;
   grid-row: 1/2;
   margin-bottom: 0;
   align-self: flex-end;
@@ -444,6 +445,7 @@ section.main__section div {
   text-decoration: underline;
   font-weight: bold;
   font-size: 6rem;
+  letter-spacing: 5px;
   grid-row: 2/3;
   align-self: flex-start;
   margin: 0;
