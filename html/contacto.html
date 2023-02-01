@@ -1,61 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto</title>
+  <link rel="icon" href="../img/churu_logo.png" type="image/png">
+  <!-- AOS animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- CSS BS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
-<body class="body__responsive">
-  <header id="encabezado">
-    <h1>Blog de Churulandia</h1>
+<body class="container-fluid p-5">
+  <header class="pb-1" id="encabezado">
+    <h1 data-aos="zoom-in" class="pb-4">Contacto</h1>
 
-    <div class="header__flex__content">
-      <img class="header__img" src="../img/churu_logo.png" alt="un gato churu">
-
-      <nav class="header__nav">
-        <ul class="nav__ul">
-          <li class="nav__links"><a href="../index.html">Inicio</a></li>
-          <li class="nav__links"><a href="blog.html">Blog</a></li>
-          <li class="nav__links"><a href="sobre nosotros.html">Sobre Nosotros</a></li>
-          <li class="nav__links"><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-
-      <form class="nav__form">
-        <label for="buscar"><img class="nav__lupa" src="../img/lupa.png" alt="lupa"></label>
-        <input type="text" value="" placeholder="Buscar tu producto AQUÍ..." id="buscar" class="buscar" name="buscar">
-        <input type="submit" value="Buscar" class="buscar_btn" name="buscar_btn">
-      </form>
-
-      <div class="header__links">
-        <a href="miCuenta.html"><img src="../img/persona_icon.png" alt="icono_persona" class="icono_persona"></a>
-        <ul class="header__links--ul">
-          <li class="micuenta_li"><a class="micuenta_a" href="miCuenta.html">Mi cuenta | </a></li>
-        </ul>
-        <a href="carrito.html"><img src="../img/carrito.png" alt="icono_carrito" class="icono_carrito"></a>
-        <a href="https://wa.me/" target="_blank" rel="noopener noreferrer"><img src="../img/wsp.png" alt="icono_wsp"
-            class="icono_wsp"></a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="header__img" src="../img/churu_logo.png"
+            alt="un gato churu"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="sobre nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Todas las categorias</a></li>
+                <li><a class="dropdown-item" href="#">Marcas</a></li>
+                <li><a class="dropdown-item" href="#">Alimentos para Perro</a></li>
+                <li><a class="dropdown-item" href="#">Alimentos para Gato</a></li>
+                <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                <li><a class="dropdown-item" href="#">Farmacia</a></li>
+                <li><a class="dropdown-item" href="#">Veterinaria</a></li>
+                <li><a class="dropdown-item" href="#">Peluqueria</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </header>
+    </nav>
 
-  <div class="header__links--2">
-    <ul class="header__links__ul">
-      <li><a href="#0">Todas las categorias</a></li>
-      <li><a href="#0">Marcas</a></li>
-      <li><a href="#0">Alimentos para Perro</a></li>
-      <li><a href="#0">Alimentos para Gato</a></li>
-      <li><a href="#0">Juguetes</a></li>
-      <li><a href="#0">Farmacia</a></li>
-      <li><a href="#0">Veterinaria</a></li>
-      <li><a href="#0">Peluqueria</a></li>
-    </ul>
-  </div>
+    <div class="header__links">
+      <a href="miCuenta.html"><img src="../img/persona_icon.png" alt="icono_persona" class="icono_persona"></a>
+
+      <ul class="header__links--ul">
+        <li class="micuenta_li"><a class="micuenta_a" href="miCuenta.html">Mi cuenta | </a></li>
+      </ul>
+
+      <a href="carrito.html"><img src="../img/carrito.png" alt="icono_carrito" class="icono_carrito"></a>
+
+      <a href="https://wa.me/" target="_blank" rel="noopener noreferrer"><img src="../img/wsp.png" alt="icono_wsp"
+          class="icono_wsp"></a>
+    </div>
+
+  </header>
 
   <main class="textos--modify">
 
@@ -120,16 +145,20 @@
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d106579.96364704832!2d-70.6936832!3d-33.406976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1673013621809!5m2!1ses!2scl"
           width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Direccion: Lorem ipsum dolor sit, amet consectet</p>
-        <p>Horario de atención: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, corporis?</p>
+
+        <div class="contacto__grid--container">
+          <p class="contacto__grid--mp"><b>Direccion:</b> Lorem ipsum dolor sit, amet consectet</p>
+          <p class="contacto__grid--mp"><b>Horario de atención:</b> Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Facere, corporis?</p>
+        </div>
       </div>
     </div>
 
   </main>
 
-  <footer>
-    <div class="footer__contenedor">
-      <div class="footer__contenedor--flex">
+  <footer class="my-2">
+    <div class="footer__contenedor my-4 text-center">
+      <div class="footer__contenedor--flex1">
         <a class="footer__contenedor--a" href="#0">
           <p class="footer__titulo1">Ayuda</p>
         </a>
@@ -140,8 +169,8 @@
         </ul>
       </div>
 
-      <div class="footer__contenedor--flex">
-        <a href="#0">
+      <div class="footer__contenedor--flex2">
+        <a class="footer__contenedor--a" href="#0">
           <p class="footer__titulo2">Sobre nosotros</p>
         </a>
         <ul class="footer__listas">
@@ -152,7 +181,7 @@
         </ul>
       </div>
 
-      <div class="footer__contenedor--flex">
+      <div class="footer__contenedor--flex3">
         <a class="footer__contenedor--a" href="#0">
           <p class="footer__titulo3">Agendar hora</p>
         </a>
@@ -166,7 +195,7 @@
         </ul>
       </div>
 
-      <div class="footer__contenedor--flex">
+      <div class="footer__contenedor--flex4">
         <a class="footer__contenedor--a" href="#0">
           <p class="footer__titulo4">Comunidad</p>
         </a>
@@ -179,10 +208,15 @@
       </div>
     </div>
 
-    <p class="copyright">Pagina creada por Sammy Maldonado - Todos los derechos reservados</p>
-
+    <p class="copyright pt-2">Pagina creada por Sammy Maldonado - Todos los derechos reservados</p>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
