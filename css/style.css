@@ -83,14 +83,15 @@ main {
   padding-right: 2.6vw;
 }
 
-.w-100 {
+.carousel__img {
   width: unset !important;
-}
-
-.d-block {
   display: unset !important;
   max-height: 550px;
   max-width: 550px;
+}
+
+.carousel__btn {
+  background-color: black;
 }
 
 h2 {
@@ -571,8 +572,8 @@ textarea {
   margin-top: 40px;
   margin-bottom: 50px;
   text-align: center;
-  padding-left: 2.6vw !important;
-  padding-right: 2.6vw !important;
+  padding-left: 2.6vw;
+  padding-right: 2.6vw;
 }
 
 .carrito__h2 {
@@ -727,11 +728,8 @@ textarea {
 
   /* Main inicio */
 
-  .w-100 {
+  .carousel__img {
     width: 100% !important;
-  }
-
-  .d-block {
     display: unset !important;
     max-height: 550px;
     max-width: 550px;
@@ -1010,7 +1008,7 @@ textarea {
 
 @media (min-width:500px) and (max-width:767px) {
 
-  .d-block {
+  .carousel__img {
     display: unset !important;
     max-height: 550px;
     max-width: 550px;
@@ -1107,11 +1105,8 @@ textarea {
 
   /* MAIN */
 
-  .w-100 {
-    width: 100% !important;
-  }
-
-  .d-block {
+  .carousel__img {
+    width: unset !important;
     display: unset !important;
     max-height: 550px;
     max-width: 550px;
@@ -1514,8 +1509,8 @@ textarea {
   /* Main carrito de compras */
 
   .textos__carrito {
-    padding-left: 2.6vw !important;
-    padding-right: 2.6vw !important;
+    padding-left: 2.6vw;
+    padding-right: 2.6vw;
   }
 
   .carrito__p1 {
